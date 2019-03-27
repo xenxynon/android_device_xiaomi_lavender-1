@@ -324,7 +324,9 @@ PRODUCT_PACKAGES += \
 
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
-    libqti-perfd-client
+    libqti-perfd-client \
+    NoCutoutOverlay \
+    NotchBarKiller
 
 # Power
 PRODUCT_PACKAGES += \
