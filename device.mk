@@ -19,7 +19,7 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-bliss
+    $(LOCAL_PATH)/overlay-aosp
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
