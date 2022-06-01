@@ -10,7 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Proton stuff
 $(call inherit-product, vendor/proton/build/common.mk)
-PROTONPLUS_BUILD_VARIANT := OFFICIAL
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
