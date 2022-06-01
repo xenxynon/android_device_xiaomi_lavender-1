@@ -7,6 +7,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
+# lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 # Boot animation
