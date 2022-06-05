@@ -10,6 +10,8 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 # lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
+-include kabelet_user/smile.mk
+
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 # Boot animation
@@ -22,11 +24,7 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
-
-# Display Device Config
-PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/configs/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+    $(LOCAL_PATH)/overlay-xdroid
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
