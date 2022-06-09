@@ -1309,8 +1309,8 @@ vendor/lib/libchromatix_lavender_s5kgm1_sunny_india_ii_zsl_video_3a.so|8b8c0ec59
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
 vendor/etc/diracvdd.bin|f9b07ace60490649c44411504909c7bf8bc73d59
 vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
-vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 vendor/lib/soundfx/libmisoundfx.so|b96beb7c9aaded46a15bdbe8079b84d2beec9911
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_boe_td4320_fhdplus_video_mode_dsi_panel.xml
@@ -1732,8 +1732,8 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql|0734c6a2863ed
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd718ecdc8d3cfac3a0b2b2c7e8c506
 vendor/radio/qcril_database/qcril.db|ece6084b4efd242fa7a7ddb068d639d631ead293
 
-# Radio - from LA.UM.9.6.2.r1-04100-89xx.0
-system_ext/framework/qti-telephony-common.jar|8c99640be5b9b9ee886bfc450b6923a33eb2fd8b
+# Radio - from LA.QSSI.12.0.r1-05100-qssi.0
+system_ext/framework/qti-telephony-common.jar|2ba72ac401a98fe15d23d58867757a2033d51f67
 
 # Radio (IMS) - from LA.UM.8.2.r1-06700-sdm660.0
 etc/permissions/com.qualcomm.qti.imscmservice.xml:system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml|db25ef24f1937366d58a53b4f4b8923bc9e98d2d
