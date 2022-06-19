@@ -4,6 +4,10 @@ typeattribute hal_power_default mlstrustedsubject;
 allow hal_power_default proc:file rw_file_perms;
 allow hal_power_default proc:dir search;
 
+# Allow writing to files in /sys/touchpanel
+allow hal_power_default sysfs_touchpanel:file rw_file_perms;
+allow hal_power_default sysfs_touchpanel:dir search;
+
 r_dir_file(hal_power_default, sysfs_graphics)
 
 allow hal_power_default { sysfs_devfreq sysfs_kgsl }:dir search;
