@@ -6,9 +6,11 @@ persist.vendor.cne.feature=1
 
 # Display
 debug.cpurend.vsync=false
+vendor.display.disable_rotator_downscale=1
 
-#Dex
+# Dex
 dalvik.vm.dex2oat64.enabled=true
+
 
 # Graphics
 persist.sys.sf.native_mode=0
