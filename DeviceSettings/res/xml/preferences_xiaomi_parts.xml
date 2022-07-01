@@ -162,9 +162,9 @@
                 android:targetClass="com.xiaomi.parts.speaker.ClearSpeakerActivity"
                 android:targetPackage="com.xiaomi.parts.speaker" />
         </Preference>
-      </PreferenceCategory>
+    </PreferenceCategory>
 
-      <PreferenceCategory
+    <PreferenceCategory
         android:key="thermal_category"
         android:title="@string/thermal_root">
 
@@ -177,6 +177,7 @@
                 android:targetClass="org.lineageos.settings.device.thermal.ThermalActivity"
                 android:targetPackage="org.lineageos.settings.device" />
         </Preference>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
