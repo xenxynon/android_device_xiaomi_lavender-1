@@ -118,7 +118,5 @@
             android:name=".DiracService"
             android:enabled="true"
             android:stopWithTask="false" />
-        </service>
-
     </application>
 </manifest>
