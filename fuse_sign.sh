@@ -22,6 +22,7 @@ sign_target_files_apks -o -d keys \
 
 ota_from_target_files -k keys/releasekey \
     signed-target_files.zip \
-$PROD_VERSION.zip
-cp $PROD_VERSION.zip $OUT
+    Fuse-lavender.zip
+
+cp Fuse*zip out/target/product/lavender 
 rm *zip
