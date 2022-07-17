@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fuse_lavender.mk
+    $(LOCAL_DIR)/derp_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    fuse_lavender-userdebug \
-    fuse_lavender-user \
-    fuse_lavender-eng
+    derp_lavender-userdebug \
+    derp_lavender-user \
+    derp_lavender-eng
