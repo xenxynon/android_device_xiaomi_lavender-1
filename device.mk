@@ -10,7 +10,7 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 # lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
--include kabelet_user/smile.mk
+include official-settings/sign.mk
 
 -include $(LOCAL_PATH)/vendor_prop.mk
 
