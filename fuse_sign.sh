@@ -1,3 +1,4 @@
+rm -rf  /home/cirrus/roms/xdroid-oss-twelve
 source build/envsetup.sh
 
 # ccache
