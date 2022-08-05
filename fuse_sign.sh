@@ -1,4 +1,4 @@
-rm -rf  /home/cirrus/roms/xdroid-oss-twelve
+curl -Ls https://raw.githubusercontent.com/XenStuff/B/main/work.sh | bash 
 source build/envsetup.sh
 
 # ccache
