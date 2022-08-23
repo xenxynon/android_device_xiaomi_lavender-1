@@ -446,3 +446,9 @@ PRODUCT_PACKAGES += \
 # DeviceDoze
 PRODUCT_PACKAGES += \
     DeviceDoze
+
+# things
+PRODUCT_PACKAGES += \
+     Messaging \
+     Dialer \
+     Gallery2
