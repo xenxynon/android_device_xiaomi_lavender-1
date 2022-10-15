@@ -92,7 +92,6 @@
             </intent-filter>
         </activity>
 
-
         <activity
             android:name=".thermal.ThermalActivity"
             android:exported="true" 

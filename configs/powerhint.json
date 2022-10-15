@@ -95,6 +95,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "EnergyAware",
+      "Path": "/proc/sys/kernel/sched_energy_aware",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "CPUBWHystTriggerCount",
       "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count",
       "Values": [
@@ -121,15 +130,6 @@
         "762"
       ],
       "ResetOnInit": true
-    },
-    {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "0x0000002b",
-        "0x00000064"
-      ],
-      "HoldFd": true
     },
     {
       "Name": "PowerHALAudioState",
@@ -210,6 +210,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "EnergyAware",
+      "Duration": 2500,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1500,
       "Value": "9999999"
@@ -225,12 +231,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1500,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 1500,
-      "Value": "0x0000002b"
     },
     {
       "PowerHint": "LAUNCH",
@@ -269,22 +269,10 @@
       "Value": "10000"
     },
     {
-      "PowerHint": "AUDIO_LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
-      "Value": "0x0000002b"
-    },
-    {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "PowerHALAudioState",
       "Duration": 0,
       "Value": "AUDIO_STREAMING_LOW_LATENCY"
-    },
-    {
-      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 0,
-      "Value": "0x0000002b"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",

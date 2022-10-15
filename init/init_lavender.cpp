@@ -75,8 +75,8 @@ void check_device()
         heapstartsize = "8m";
         heapgrowthlimit = "192m";
         heapsize = "512m";
-        heaptargetutilization = "0.75";
-        heapminfree = "512k";
+        heaptargetutilization = "0.7";
+        heapminfree = "4m";
         heapmaxfree = "8m";
     }
 }
@@ -102,5 +102,6 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+
     property_override("ro.treble.enabled", "");
 }

@@ -28,6 +28,9 @@
 #
 
 on init
+    # Disable powersaving
+    write /sys/module/lpm_levels/parameters/sleep_disabled 1
+
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 5
     write /dev/stune/top-app/schedtune.prefer_idle 1
@@ -111,13 +114,18 @@ on boot
     chown system system /persist/speccfg/vendor_persist.prop
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
+    
+    # Turn on sleep modes
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 
     # Double Tap to Wake
     chown system system /proc/tp_gesture
-    chmod 0664 /proc/tp_gesture
+    chown system system /sys/touchpanel/double_tap
+    chmod 0660 /proc/tp_gesture
+    chmod 0660 /sys/touchpanel/double_tap
 
 #Load WLAN driver
    insmod /vendor/lib/modules/qca_cld3_wlan.ko
@@ -150,13 +158,6 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-
-
-on property:sys.boot_completed=1
-    setprop sys.io.scheduler "bfq"
-    # Enable ZRAM on boot_complete
-    swapon_all /vendor/etc/fstab.qcom
-    write /proc/sys/vm/swappiness 100
 
 on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6,7

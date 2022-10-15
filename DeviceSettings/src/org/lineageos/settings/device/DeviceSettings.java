@@ -241,7 +241,7 @@ public class DeviceSettings extends PreferenceFragment implements
                     this.getContext().stopService(fpsinfo);
                 }
                 break;
-
+                
             default:
                 break;
         }
