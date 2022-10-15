@@ -1469,14 +1469,6 @@ vendor/firmware/a530_pfp.fw|c19e1905c15622d7bb02409e6748959bceda9b08
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
 # Graphics - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/etc/permissions/android.hardware.opengles.aep.xml|aa43dad85f2c2d65f0ac2afb1f5425e1220b832b
-vendor/etc/permissions/android.hardware.vulkan.compute-0.xml|8a498209db76907ec91241458ce350cd60c142ee
-vendor/etc/permissions/android.hardware.vulkan.compute.xml|8a498209db76907ec91241458ce350cd60c142ee
-vendor/etc/permissions/android.hardware.vulkan.level-0.xml|b893f37c0ac53835d45b60019f75a1550bdd9cb9
-vendor/etc/permissions/android.hardware.vulkan.level.xml|b893f37c0ac53835d45b60019f75a1550bdd9cb9
-vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml|fc70b06dc33428cb263b2af903bb26385180884c
-vendor/etc/permissions/android.hardware.vulkan.version.xml|fc70b06dc33428cb263b2af903bb26385180884c
-vendor/etc/permissions/android.software.vulkan.deqp.level.xml|8355b3b6d2f57534de845cc4ac011f417994f524
 vendor/lib/egl/eglSubDriverAndroid.so|966890c8777c7db78ffe44781f57205059d57324
 vendor/lib/egl/libEGL_adreno.so|317ed85a6a86cceba0070d2353b284a5c8f80df0
 vendor/lib/egl/libGLESv1_CM_adreno.so|701afdaca670a639da608d6aaaef35cc13539d91
