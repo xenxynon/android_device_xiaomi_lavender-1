@@ -1843,9 +1843,9 @@ vendor/lib64/libsensor1.so|dac9d5fb1b5aacfa5bedf812ebdd04eadd0af2dc
 vendor/lib64/libsensor_reg.so|be00c924983a2a279f799332cf2b262da9af78d1
 vendor/lib64/sensor_calibrate.so|dacb7a77e1713a756a43c082329e9f42e2c0d40e
 
-# Sensors - from lavender-user-10-QKQ1.190910.002-V12.5.3.0.QFGMIXM
-vendor/lib/sensors.ssc.so|1c37ad46b43cd81024dd41243c949a24dd2d9f86
-vendor/lib64/sensors.ssc.so|fe650649184fd43dcfa90776395fe0680d972a7c
+# Sensors - from Plate2_00WW-user 9 PPR1.180610.011 00WW_3_260 
+vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
+vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 
 # Thermal - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/etc/thermal-engine-camera.conf|db9829a655ca0c3013448e6a4aee3fcce9f90ca2
