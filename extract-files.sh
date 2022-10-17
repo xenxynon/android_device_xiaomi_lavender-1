@@ -23,6 +23,15 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
+            "${PATCHELF}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
+    esac
+}
+
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
